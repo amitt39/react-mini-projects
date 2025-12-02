@@ -66,3 +66,77 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.wrapper {
+  display: flex;
+  justify-content: centere;
+  flex-direction: column;
+  background-color: rgb(46, 45, 45);
+  width: 500px;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 100%;
+  flex: 1;
+}
+input:hover {
+  border-color: #646cff;
+}
+input:focus,
+input:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-container {
+  text-align: start;
+}
+
+li {
+  list-style-type: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.delBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.3em 0.6em;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.delBtn:hover {
+  border-color: #cc1313;
+}
+.delBtn:focus,
+.delBtn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
