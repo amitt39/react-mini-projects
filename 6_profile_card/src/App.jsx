@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import user1Image from "./assets/user1.jpg";
+import user2Image from "./assets/user2.jpg";
 import { AddProfileCard } from "./component/AddProfileCard";
 import { ProfileCard } from "./component/ProfileCard";
 import defaultAvatar from "/src/assets/default.png";
@@ -11,14 +13,14 @@ function App() {
       name: "Sarah Anderson",
       role: "UI/UX Designer",
       city: "San Francisco, CA",
-      image: "/src/assets/user1.jpg",
+      image: user1Image,
     },
     {
       id: 2,
       name: "Michael Chen",
       role: "Frontend Developer",
       city: "Seattle, WA",
-      image: "/src/assets/user2.jpg",
+      image: user2Image,
     },
   ]);
 
