@@ -1,0 +1,43 @@
+#root {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #0d0d0d;
+  overflow: hidden;
+}
+
+.cards-container {
+  width: 100%;
+  max-width: 1400px;
+  height: 700px;
+  background-color: #000000;
+  border: 2px solid #333333;
+  border-radius: 12px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  align-content: start;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cards-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cards-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cards-container::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+.cards-container::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
